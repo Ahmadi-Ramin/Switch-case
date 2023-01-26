@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+
+<body>
+    <h2>JavaScript Switch</h2>
+    <p id="demo"></p>
+    <script>
+        var päivä;
+        switch (new Date().getDay()) {
+            case 0:
+                päivä = "Sunnuntai";
+                break;
+            case 1:
+                päivä = "maanantai";
+                break;
+            case 2:
+                päivä = "Tiistai";
+                break;
+            case 3:
+                päivä = "Keskiviikko";
+                break;
+            case 4:
+                päivä = "Torstai";
+                break;
+            case 5:
+                päivä = "Perjantai";
+                break;
+            case 6:
+                päivä = "Lauantai";
+        }
+        alert("Tänään on " + päivä);
+        document.getElementById("demo").innerHTML = "Tänään on " + päivä + ".";
+    </script>
+</body>
+
+</html>
